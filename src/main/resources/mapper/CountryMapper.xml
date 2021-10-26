@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.boot.dao.CountryDAO">
+  		      
+  <select id="selectCountries" parameterType="hashmap" resultType="com.boot.dto.Country">
+	SELECT COUNTRY_ID
+	        ,COUNTRY_NAME
+	        ,REGION_ID
+	FROM COUNTRIES 
+  </select>
+  
+  <select id="selectRegion" resultType="com.boot.dto.Region">
+	select REGION_ID
+			,REGION_NAME
+	from REGIONS
+  </select>
+  
+  <insert id="insertCountry" parameterType="hashmap">
+  INSERT INTO COUNTRIES (
+  	COUNTRY_ID
+  	, COUNTRY_NAME
+  	, REGION_ID)
+	VALUES (
+	#{countryId} 
+	,#{countryName}
+	,#{regionId} 
+	)
+  </insert>
+
+</mapper>
