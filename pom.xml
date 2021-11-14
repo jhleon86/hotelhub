@@ -127,7 +127,6 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
-					<argLine>-Xmx1024m</argLine>
 				</configuration>
 			</plugin>
 		</plugins>
