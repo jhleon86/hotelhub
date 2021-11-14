@@ -8,6 +8,7 @@
 <!-- 공통변수 처리 -->
 <c:set var="CONTEXT_PATH" value="${pageContext.request.contextPath}" scope="application"/>
 <c:set var="RESOURCES_PATH" value="${CONTEXT_PATH}/static/design" scope="application"/>
+<c:set var="REQUEST_URI" value="${pageContext.request.requestURI}" scope="application"/>
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,8 +19,9 @@
 	<script type="text/javascript">
 		var CONTEXT_PATH = "${CONTEXT_PATH}";
 		var RESOURCES_PATH = "${RESOURCES_PATH}";
+		var REQUEST_URI = "${REQUEST_URI}";
 	</script>
-	<link rel="stylesheet" href="${RESOURCES_PATH}/css/common.css">
+	<link rel="stylesheet" href="${CONTEXT_PATH}/static/css/common.css">
     <title></title>
     
     <!-- Bootstrap core CSS -->
@@ -36,6 +38,17 @@
     <!-- Custom styles for this template --> 
     <link href="${RESOURCES_PATH}/css/style.css" rel="stylesheet">
     <link href="${RESOURCES_PATH}/css/style-responsive.css" rel="stylesheet" />
+    <link href="${RESOURCES_PATH}/assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="${RESOURCES_PATH}/css/gallery.css" />
+    <link href="${RESOURCES_PATH}/css/style.css" rel="stylesheet">
+    <link href="${RESOURCES_PATH}/css/style-responsive.css" rel="stylesheet" />
+    
+    
+      	<!-- js placed at the end of the document so the pages load faster -->
+    <script src="${RESOURCES_PATH}/js/jquery.js"></script>
+
+    
+    <script type="text/javascript" src="${RESOURCES_PATH}/assets/ckeditor/ckeditor.js"></script>
     
   </head>
 
@@ -48,11 +61,10 @@
   		<tiles:insertAttribute name="footer"/>
   		
   	</section>
-  	
-  	<!-- js placed at the end of the document so the pages load faster -->
-    <script src="${RESOURCES_PATH}/js/jquery.js"></script>
-    <script src="${RESOURCES_PATH}/js/bootstrap.bundle.min.js"></script>
+  	 
+  	<script src="${RESOURCES_PATH}/js/bootstrap.bundle.min.js"></script>
     <script class="include" type="text/javascript" src="${RESOURCES_PATH}/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="${RESOURCES_PATH}/assets/fancybox/source/jquery.fancybox.js"></script>
     <script src="${RESOURCES_PATH}/js/jquery.scrollTo.min.js"></script>
     <script src="${RESOURCES_PATH}/js/jquery.nicescroll.js" type="text/javascript"></script>
     <script src="${RESOURCES_PATH}/js/jquery.sparkline.js" type="text/javascript"></script>
@@ -60,6 +72,8 @@
     <script src="${RESOURCES_PATH}/js/owl.carousel.js" ></script>
     <script src="${RESOURCES_PATH}/js/jquery.customSelect.min.js" ></script>
     <script src="${RESOURCES_PATH}/js/respond.min.js" ></script>
+    
+    <script src="${RESOURCES_PATH}/js/modernizr.custom.js"></script>
 
     <!--right slidebar-->
     <script src="${RESOURCES_PATH}/js/slidebars.min.js"></script>
@@ -70,12 +84,13 @@
     <!--script for this page-->
     <script src="${RESOURCES_PATH}/js/sparkline-chart.js"></script>
     <script src="${RESOURCES_PATH}/js/easy-pie-chart.js"></script>
-    <script src="${RESOURCES_PATH}/js/count.js"></script>
-
+<%--     <script src="${RESOURCES_PATH}/js/count.js"></script> --%>
+    
 	<script> 
-	$(document).ready(function() {
-		
-	});  
+    $(function() {
+        //    fancybox
+          $(".fancybox").fancybox();
+      });
 	</script>
   </body>
   

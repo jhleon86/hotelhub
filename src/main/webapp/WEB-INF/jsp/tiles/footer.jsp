@@ -3,7 +3,7 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2018 &copy; FlatLab by VectorLab. 
+              2021 &copy; leejunho 
           </div>
       </footer>
       <!--footer end-->

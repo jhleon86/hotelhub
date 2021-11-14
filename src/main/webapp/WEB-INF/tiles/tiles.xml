@@ -11,10 +11,19 @@
 		<put-attribute name="footer" value="/WEB-INF/jsp/tiles/footer.jsp" />
 	</definition>
 	
-	<definition name="tiles-sample/*" extends="layout">
-		<put-attribute name="body" value="/WEB-INF/jsp/tiles-sample/{1}.jsp" /> 
+<!-- 	<definition name="tiles-sample/*" extends="layout"> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/jsp/tiles-sample/{1}.jsp" />  -->
+<!-- 	</definition> -->
+<!-- 	<definition name="study-sample/*" extends="layout"> -->
+<!-- 		<put-attribute name="body" value="/WEB-INF/jsp/study-sample/{1}.jsp" />  -->
+<!-- 	</definition> -->
+	
+	<definition name="main" extends="layout">
+		<put-attribute name="body" value="/WEB-INF/jsp/main.jsp" /> 
 	</definition>
-	<definition name="study-sample/*" extends="layout">
-		<put-attribute name="body" value="/WEB-INF/jsp/study-sample/{1}.jsp" /> 
+
+	<definition name="*/*" extends="layout">
+		<put-attribute name="body" value="/WEB-INF/jsp/{1}/{2}.jsp" /> 
 	</definition>
+	
 </tiles-definitions>
