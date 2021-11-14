@@ -38,18 +38,18 @@
 	<div class="parent">
 		<div class="child left" style="display: inline-grid;">
 		<span>step1. 주문(야놀자)</span>
-		<iframe style="width: 414px ; height: 736px; border: none;" src="pt/yn/yn1_1">
+		<iframe style="width: 414px ; height: 736px; border: double; margin: 50px" src="pt/yn/yn1_1">
 		</iframe>
 		</div>
 		<div class="child center" style="display: inline-grid;">
 		<span>step2. soldout 확인(쿠팡)<button id="button_cp_refresh" type="button">새로고침</button></span>
 		
-		<iframe id="iframe_cp" style="width: 414px ; height: 736px; border: none;" src="pt/cp/cp1_1">
+		<iframe id="iframe_cp" style="width: 414px ; height: 736px; border: double;margin: 50px" src="pt/cp/cp1_1">
 		</iframe>
 		</div>
 		<div class="child right" style="display: inline-grid;">
 		<span>step2. soldout 확인(노랑풍선)<button id="button_np_refresh" type="button">새로고침</button></span> 
-		<iframe id="iframe_np" style="width: 414px ; height: 736px; border: none;" src="pt/np/np1_1">
+		<iframe id="iframe_np" style="width: 414px ; height: 736px; border: double;margin: 50px" src="pt/np/np1_1">
 		</iframe>
 		</div>
 	</div>
