@@ -10,8 +10,14 @@ public class ptController {
 	@GetMapping("/pt")
 	public String pt(Model model) { 
 		
-		return "pt/pt/pt";
+		return "pt/pt/pt1";
 	}
+	@GetMapping("/pt2")
+	public String pt2(Model model) { 
+		
+		return "pt/pt/pt2";
+	}
+	
 	
 	
 	/**
