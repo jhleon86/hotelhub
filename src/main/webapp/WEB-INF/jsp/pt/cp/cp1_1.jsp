@@ -21415,6 +21415,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <a href="cp1_2">
                             <div class="lodging-room-result">
                                 <div class="lodging-room">
                                     <div class="room-thumbnail">
@@ -21443,6 +21444,7 @@
                                     </button>
                                 </div>
                             </div>
+                            </a>
                             <div class="dimmed-loader" style="display: none; min-height: 260px; margin-top: 0px;">
                                 <div class="dimmed-loader-wrapper">
                                     <div class="spinner-box">

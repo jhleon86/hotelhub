@@ -23374,6 +23374,7 @@
                                     </div>
                                     <div _ngcontent-serverapp-c208="" class="contents-item mg" id="roomSelect">
                                         <h2 _ngcontent-serverapp-c208="" id="room-price" class="contents-title">객실선택<span _ngcontent-serverapp-c208="" class="sub-text">(세금,봉사료 포함)</span></h2>
+<!--                                         <a href="np1_2"> -->
                                         <div _ngcontent-serverapp-c208="" class="round-box">
                                             <!---->
                                            
@@ -23391,11 +23392,12 @@
                                                 <!---->
                                                 <div _ngcontent-serverapp-c208="" class="select">
                                                     <!---->
-                                                    <span _ngcontent-serverapp-c208="" class="price"><strong _ngcontent-serverapp-c208="">913,000</strong> 원 </span><a _ngcontent-serverapp-c208="" class="btn-reservation">선택</a>
+                                                    <span _ngcontent-serverapp-c208="" class="price"><strong _ngcontent-serverapp-c208="">913,000</strong> 원 </span><a href="pt/np/np1_2" _ngcontent-serverapp-c208="" class="btn-reservation">선택</a>
                                                 </div>
                                             </div>
                                             <!----><!----><!----><!----><!----><!----><!----><!---->
                                         </div>
+<!--                                         </a> -->
                                     </div>
                                     <div _ngcontent-serverapp-c208="" class="contents-item mg">
                                         <h2 _ngcontent-serverapp-c208="" id="hotel-information" class="contents-title line">호텔정보</h2>

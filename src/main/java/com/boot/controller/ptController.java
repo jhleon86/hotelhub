@@ -149,8 +149,7 @@ public class ptController {
 	public String np1_2(Model model) { 
 		
 		return "pt/np/np1_2";
-	}
-	
+	} 
 	
 	
 }
